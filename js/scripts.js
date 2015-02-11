@@ -1,10 +1,20 @@
 
-const CSV_URL  = 'data/ipc_2005_2014_coeficiente_confusion.csv'
+const CSV_URL  = 'data/ipc_2005_2014_coeficiente_confusion.csv',
+	CHART_1 = ["IPC.INDEC", "IPC.San.Luis"],
+	CHART_2 = ['IPC.INDEC.acumulado.anual', 'IPC.San.Luis.acumulado.anual'],
+	CHART_3 = ["coeficiente.confusion", "coeficiente.confusion.acumulado.anual"];
+var g_data;
+
 d3.csv(CSV_URL, function(err, data){
 	"use strict";
-	data = add_timestamp_to_data(data);
+	g_data = add_timestamp_to_data(data);
 	
-	var data_chart = map_for_chart(data);
+	drag_chart(CHART_1)
+});
+
+function drag_chart(arr_keys){
+
+	var data_chart = map_for_chart(g_data, arr_keys);
 	
 	var chart = c3.generate({
         bindto: '#chart',
@@ -24,9 +34,7 @@ d3.csv(CSV_URL, function(err, data){
             enabled: true
         }
     });
-
-});
-
+}
 
 
 // helpers
@@ -42,25 +50,21 @@ function add_timestamp_to_data(data){
     return data;
 }
 
-function map_for_chart (data) {
-	// var keys = ["IPC.INDEC", "IPC.San.Luis"]
-	
+function map_for_chart (data, arr_keys) {
 	var columns = [
-		['x'],
-		["IPC.INDEC"],
-		["IPC.San.Luis"]
+		['x']
 	];
 	
+	for (i in arr_keys){ // tomo las columnas pedidas
+		columns.push([arr_keys[i]]);
+	}
 	data.forEach(function(d){
-		// console.log()
 		columns[0].push(d['periodo']);
-		columns[1].push(d['IPC.INDEC']);
-		columns[2].push(d['IPC.San.Luis']);
-		// temp_data_chart.push(t);
+		for (i in arr_keys){ // tomo las columnas pedidas
+			columns[+i+1].push(d[arr_keys[i]]);
+		}
 	});
-	console.log(columns)
 
-	// temp_data_chart.push(time)
 
 	return {
 		x: 'x',
