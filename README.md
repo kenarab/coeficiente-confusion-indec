@@ -8,12 +8,19 @@
 ```bash
 bower install
 ```
-### iniciar el server
+
+### Correr un server local
 
 ```bash
-bower install
+python -m SimpleHTTPServer
 ```
 
+Abrir el navegado en http://0.0.0.0:8000
 
 
+
+## Créditos
+
+- Alejandro Baranek - Análisis y producción de datos. 
+- Cristian Bertelegni - Front end
 
