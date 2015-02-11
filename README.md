@@ -8,3 +8,12 @@
 ```bash
 bower install
 ```
+### iniciar el server
+
+```bash
+bower install
+```
+
+
+
+
