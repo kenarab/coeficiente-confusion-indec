@@ -1,0 +1,254 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"for",
+				"format"
+			],
+			[
+				"se",
+				"search_term"
+			],
+			[
+				"he",
+				"help_text"
+			],
+			[
+				"document",
+				"document_id"
+			],
+			[
+				"nuev",
+				"nuevo_adjudicatario"
+			],
+			[
+				"save",
+				"save_without_setting_canon"
+			],
+			[
+				"canon",
+				"canon_adj"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/cbertelegni/projects/confusion_indec"
+	],
+	"file_history":
+	[
+		"/home/cbertelegni/projects/confucion_indec_project/.bowerrc",
+		"/home/cbertelegni/projects/vozdata_project/crowdata/.gitignore",
+		"/home/cbertelegni/projects/vozdata_project/crowdata/fabfile.py",
+		"/home/cbertelegni/projects/vozdata_project/crowdata/docs.md",
+		"/home/cbertelegni/projects/vozdata_project/crowdata/crowdataapp/signals.py",
+		"/home/cbertelegni/projects/vozdata_project/crowdata/local_settings.py",
+		"/home/cbertelegni/projects/vozdata_project/crowdata/crowdataapp/management/commands/fix_errors.py",
+		"/home/cbertelegni/projects/vozdata_project/crowdata/crowdataapp/management/commands/export_data.py",
+		"/home/cbertelegni/projects/vozdata_project/crowdata/settings.py",
+		"/home/cbertelegni/projects/vozdata_project/crowdata/static/admin/css/document_set_admin.css",
+		"/home/cbertelegni/projects/votaciones_project/prototipo/js/script.js",
+		"/home/cbertelegni/projects/vozdata_project/crowdata/crowdataapp/views.py",
+		"/home/cbertelegni/projects/vozdata_project/crowdata/crowdataapp/__init__.py",
+		"/home/cbertelegni/projects/vozdata_project/crowdata/crowdataapp/templatetags/crowdataapp_tags.py",
+		"/home/cbertelegni/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/cbertelegni/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/cbertelegni/projects/vozdata_project/crowdata/templates/base.html",
+		"/home/cbertelegni/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"amount_rows_on_home",
+			"self.SUBQUERY_LABEL",
+			"self.SUBQUERY_MAGNITUDE",
+			"DocumentSetRankingDefinition",
+			"SUBQUERY_MAGNITUDE",
+			"ranking_",
+			"SUBQUERY_LABEL",
+			"honorable",
+			"connection",
+			"_ranking_query",
+			"canonical_label",
+			"ranking_calculate_all",
+			"calculate",
+			"calculate_all",
+			"_ranking_query",
+			"ranking",
+			"CanonicalFieldEntryLabel",
+			"DocumentSetFieldEntryAdminForm",
+			"DocumentSetFieldEntryAdmin",
+			"documentsetfieldentry",
+			"save_without_setting_canon",
+			"save",
+			"Modificar Entrada de campo de formulario",
+			"CanonicalFieldEntryLabel",
+			"Document",
+			"document",
+			"pintar_referencias",
+			"gen_referencias",
+			"lista_leyes",
+			"lista_bloques",
+			"lista_leyes",
+			"DEFAULT_TEMPLATE_JS",
+			"post_save",
+			"signals",
+			"nuevo_adjudicatario",
+			"canon_adj",
+			"nuevo_adjudicatario",
+			"first_name",
+			"TIPPO_DE_GASTO_FIELD_ID",
+			"verify_document",
+			"desc",
+			"':\n",
+			"description",
+			"tosum_field",
+			"togg",
+			"comme",
+			"GEOS_LIBRARY_PATH",
+			"Mayo"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "confusion_indec.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 259.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
