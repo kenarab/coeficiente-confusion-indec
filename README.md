@@ -15,7 +15,7 @@ bower install
 python -m SimpleHTTPServer
 ```
 
-Abrir el navegado en http://0.0.0.0:8000
+Abrir el navegador en http://0.0.0.0:8000
 
 
 
