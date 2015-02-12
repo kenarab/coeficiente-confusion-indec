@@ -6,7 +6,7 @@
 	<title>Confisión Indec</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/c3/c3.min.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css?1">
 </head>
 <body>
 
@@ -16,7 +16,7 @@
 <div id="content" class="wrapper">
 	<ul>
 		<li><a href="#" onclick="drag_chart(CHART_4, AXES_Y2_CHART_4); return false;">Gráfico 1</a></li>
-		<li><a href="#" onclick="drag_chart(CHART_3); return false;">Gráfico 2</a></li>
+		<li><a href="#" onclick="drag_chart(CHART_3, null, 'bar'); return false;">Gráfico 2</a></li>
 		<!-- <li><a href="#" onclick="drag_chart(CHART_3); return false;">Gráfico 3</a></li> -->
 	</ul>
 	<div id="chart"></div>
@@ -24,14 +24,14 @@
 
 <footer class="wrapper">
 	<br> 
-	Alejandro Baranek - Análisis y producción de datos. 
+	<b>Análisis y producción de datos:</b> Alejandro Baranek
 	<br> 
-	Cristian Bertelegni - desarrollo web
+	<b>Desarrollo web:</b> Cristian Bertelegni
 </footer>
 
 <script type="text/javascript" src="bower_components/d3/d3.min.js"></script>
 <script type="text/javascript" src="bower_components/c3/c3.min.js"></script>
-<script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript" src="js/scripts.js?1"></script>
 
 </body>
 </html>

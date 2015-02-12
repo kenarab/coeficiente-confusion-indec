@@ -7,5 +7,5 @@ ul li a { color: #333; padding: 10px; border: 1px solid #333; margin-right: 20px
 
 .wrapper { max-width: 900px; margin: 0 auto;}
 
-.red text { font-size: 12px;}
-.red line { stroke: red;}
+.red text { font-size: 12px; font-weight: normal; fill: red}
+.red line { stroke: red; stroke-linecap:round; stroke-dasharray:3, 5;}

@@ -21,9 +21,13 @@ d3.csv(CSV_URL, function(err, data){
 	drag_chart(CHART_4, AXES_Y2_CHART_4);
 });
 
-function drag_chart(arr_keys, axes_y2){
+function drag_chart(arr_keys, axes_y2, chart_type){
 
 	var data_chart = map_for_chart(g_data, arr_keys);
+	
+	if(chart_type){
+		data_chart.type = chart_type;
+	}
 	
 	var axis = {
             x: {
@@ -69,16 +73,6 @@ function drag_chart(arr_keys, axes_y2){
 
 // helpers
 
-function add_timestamp_to_data(data){
-
-    data = data.map(function(d){ 
-        var date = d.periodo.split("-");
-        d.timestamp = new Date(date[0], date[1]).getTime();
-        return d;
-    });
-
-    return data;
-}
 
 function map_for_chart (data, arr_keys) {
 	var columns = [
@@ -106,3 +100,13 @@ function map_for_chart (data, arr_keys) {
 	};
 }
 
+function add_timestamp_to_data(data){
+
+    data = data.map(function(d){ 
+        var date = d.periodo.split("-");
+        d.timestamp = new Date(date[0], date[1]).getTime();
+        return d;
+    });
+
+    return data;
+}
