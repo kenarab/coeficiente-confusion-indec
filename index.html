@@ -33,5 +33,17 @@
 <script type="text/javascript" src="bower_components/c3/c3.min.js"></script>
 <script type="text/javascript" src="js/scripts.js?1"></script>
 
+<script type="text/javascript">
+	d3.csv(CSV_URL, function(err, data){
+	"use strict";
+	// g_data = add_timestamp_to_data(data);
+	g_data = data;
+	
+
+	drag_chart(CHART_3, null, 'bar');
+});
+</script>
+
+
 </body>
 </html>
