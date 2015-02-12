@@ -25,7 +25,7 @@ function drag_chart(arr_keys, axes_y2, chart_type){
 	};
 
 	data_chart.types = {
-        "coeficiente.confusion.acumulado.anual": 'bar'
+        // "coeficiente.confusion.acumulado.anual": 'bar'
       };
 
 	if(chart_type){
