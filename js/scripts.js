@@ -53,6 +53,9 @@ function drag_chart(arr_keys, axes_y2, chart_type){
         bindto: '#chart',
         data: data_chart,
         axis: axis,
+        color: {
+        	pattern: ['blue', 'green', ]
+    	},
         grid: {
 		  x: {
 		  	show: true,

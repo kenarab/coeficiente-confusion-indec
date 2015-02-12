@@ -7,5 +7,10 @@ ul li a { color: #333; padding: 10px; border: 1px solid #333; margin-right: 20px
 
 .wrapper { max-width: 900px; margin: 0 auto;}
 
-.red text { font-size: 12px; font-weight: normal; fill: red}
-.red line { stroke: red; stroke-linecap:round; stroke-dasharray:3, 5;}
+#chart .red text { font-size: 12px; font-weight: normal; fill: red}
+#chart .red line { stroke: red; stroke-linecap:round; stroke-dasharray:3, 5;}
+/*
+#chart .c3-line-IPC-San-Luis { stroke: #000;}
+#chart .c3-line-IPC-INDEC { stroke-color: #000 !important;  stroke-width: 15px; }
+*/
+#chart .c3-line-IPC-San-Luis-acumulado-anual, #chart .c3-line-IPC-INDEC-acumulado-anual { stroke-linecap:round; stroke-dasharray:3, 5; }
