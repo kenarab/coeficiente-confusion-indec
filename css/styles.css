@@ -1,5 +1,6 @@
 body { font-family: arial; font-size: 12px;}
-header.wrapper {padding: 20px 0px; border-bottom: solid 1px #ccc; margin-bottom: 20px}
+header.wrapper { padding: 20px 0px; border-bottom: solid 1px #ccc; margin-bottom: 20px}
+header.wrapper p { margin-top: 10px}
 a {color: #335577;} 
 h1 { font-size: 2em; font-family: sans-serif}
 h2 { font-size: 1.5em;}
@@ -24,6 +25,6 @@ small { font-size: 14px}
 */
 #chart .c3-line { stroke-width: 2px;}
 #chart .c3-line-IPC-San-Luis-acumulado-anual, #chart .c3-line-IPC-INDEC-acumulado-anual { stroke-linecap:round; stroke-dasharray:2, 5; }
-
+.c3-axis-x-label, .c3-axis-y-label, .c3-axis-y2-label {font-weight: bold;}
 footer.wrapper  { border-top: solid 1px #ccc; padding: 10px; margin-top: 20px;}
 footer a.datos { float: right;}

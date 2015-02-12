@@ -39,6 +39,8 @@ function drag_chart(arr_keys, axes_y2, chart_type){
         // "coeficiente.confusion.acumulado.anual": 'bar'
       };
 
+    data_chart.hide = function(x){console.log(x)};
+	
 	if(chart_type){
 		data_chart.type = chart_type;
 	}
@@ -49,17 +51,37 @@ function drag_chart(arr_keys, axes_y2, chart_type){
                 tick: {
                     format: '%m-%Y',
                 	count: 9
+                },
+                label: {
+                	text:"Período",
+                	position: 'outer-center'
                 }
+            },
+            y:{
+            	label: {
+            		text:"Indice (%)",
+            		position: 'outer-middle'
+            	}
             }
         };
+	if(/coeficiente/gi.test(arr_keys[0])){ // si es coeficiente cambia el nombre del eje y
+		axis.y.label.text = "Coeficiente confusión"
+	}
 
+	if(/acumulado/gi.test(arr_keys[0])){ // si es coeficiente cambia el nombre del eje y
+		axis.y.label.text = "Variación anual acumulada"
+	}
 
 	if (axes_y2){
 		
 		data_chart.axes = axes_y2;
 
 		axis.y2 = {
-            	show: true
+            	show: true,
+            	label: {
+					text: "Variación anual acumulada",
+					position: 'outer-middle',
+				}
             }
 	
 	}	
