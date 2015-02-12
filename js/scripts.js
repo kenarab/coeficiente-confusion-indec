@@ -56,11 +56,21 @@ function drag_chart(arr_keys, axes_y2, chart_type){
         color: {
         	pattern: ['blue', 'green', ]
     	},
+    	point: {
+    		show: true,
+    		r: 0,
+    		focus: {
+				expand: {
+				  enabled: true,
+				  r: 4
+				}
+			}
+    	},
         grid: {
 		  x: {
 		  	show: true,
 		    lines: [
-		      {value: "2006-12-01", text: 'Intervención del Idec', class: "red"}
+		      {value: "2006-12-01", text: 'comienzo intervención', class: "red"}
 		    ]
 		  }
 		},
