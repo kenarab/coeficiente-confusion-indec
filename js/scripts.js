@@ -15,8 +15,19 @@ function drag_chart(arr_keys, axes_y2, chart_type){
 
 	var data_chart = map_for_chart(g_data, arr_keys);
 	
+	// lineas a mediado de diciembre
+	var lines_grid = [{value: "2006-12-15", text: 'comienzo intervención', class: "red"}]
+	var first_year = +g_data[0].periodo.split('-')[0];
+	var last_year = +g_data[g_data.length-1].periodo.split('-')[0];
+	var tmpl_date = "__ano__-12-15";
+	for(var ano =first_year;  ano <= last_year; ano++){
+		if (ano == 2006) continue;
+		lines_grid.push({ value: tmpl_date.replace("__ano__", ano), class: "line_dotted"});
+	}
+
+
 	data_chart.names = {
-		"IPC.San.Luis": "San Luis", 
+		"IPC.San.Luis": "San Luis",
 		"IPC.INDEC": "INDEC",
 		"IPC.San.Luis.acumulado.anual": "Acum Anual San Luis",
 		"IPC.INDEC.acumulado.anual": "Acum. Anual INDEC",
@@ -81,10 +92,8 @@ function drag_chart(arr_keys, axes_y2, chart_type){
     	},
         grid: {
 		  x: {
-		  	show: true,
-		    lines: [
-		      {value: "2006-12-01", text: 'comienzo intervención', class: "red"}
-		    ]
+		  	show: 0,
+		    lines: lines_grid // array de lineas
 		  }
 		},
         subchart: {
