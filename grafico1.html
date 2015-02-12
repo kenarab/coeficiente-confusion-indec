@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<title>Confusión Indec</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/c3/c3.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css?1">
+</head>
+<body>
+
+<header class="wrapper">
+	<h1>Coeficiente de Confusión <small>(CC)</small></h1>
+</header>
+<div id="content" class="wrapper">
+	<div id="chart"></div>
+</div>
+
+<footer class="wrapper">
+	<br> 
+	<b>Análisis y producción de datos:</b> Alejandro Baranek
+	<br> 
+	<b>Desarrollo web:</b> Cristian Bertelegni
+</footer>
+
+<script type="text/javascript" src="bower_components/d3/d3.min.js"></script>
+<script type="text/javascript" src="bower_components/c3/c3.min.js"></script>
+<script type="text/javascript" src="js/scripts.js?1"></script>
+
+<script type="text/javascript">
+	d3.csv(CSV_URL, function(err, data){
+	"use strict";
+	// g_data = add_timestamp_to_data(data);
+	g_data = data;
+	
+
+	drag_chart(CHART_4, AXES_Y2_CHART_4);
+});
+</script>
+</body>
+</html>

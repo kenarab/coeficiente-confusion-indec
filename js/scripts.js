@@ -12,19 +12,19 @@ const CSV_URL  = 'data/ipc_2005_2014_coeficiente_confusion.csv',
 
 var g_data;
 
-d3.csv(CSV_URL, function(err, data){
-	"use strict";
-	// g_data = add_timestamp_to_data(data);
-	g_data = data;
-	
-
-	drag_chart(CHART_4, AXES_Y2_CHART_4);
-});
-
 function drag_chart(arr_keys, axes_y2, chart_type){
 
 	var data_chart = map_for_chart(g_data, arr_keys);
 	
+	data_chart.names = {
+		"IPC.San.Luis": "San Luis", 
+		"IPC.INDEC": "INDEC",
+		"IPC.San.Luis.acumulado.anual": "Acum Anual San Luis",
+		"IPC.INDEC.acumulado.anual": "Acum. Anual INDEC",
+		"coeficiente.confusion": "CC acumulada",
+		"coeficiente.confusion.acumulado.anual": "CC acumulada anual"
+	}
+
 	if(chart_type){
 		data_chart.type = chart_type;
 	}
