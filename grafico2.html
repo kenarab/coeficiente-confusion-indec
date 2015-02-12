@@ -6,28 +6,28 @@
 	<title>Confusión Indec</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/c3/c3.min.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css?1">
+	<link rel="stylesheet" type="text/css" href="css/styles.css?2">
 </head>
 <body>
 
 <header class="wrapper">
-	<h1>Evolución de coeficiente de confusión <small>(CC)</small> San Luis/INDEC</h1>
-	<p>Acumulados anuales y total. Oct-2005 / Dic-2014</p>
+	<h1>Evolución de coeficiente de confusión <small>(CC)</small></h1>
+	<p>San Luis/INDEC, acumulados anuales y total. Oct-2005 / Dic-2014</p>
 </header>
 <div id="content" class="wrapper">
 	<div id="chart"></div>
 </div>
 
 <footer class="wrapper">
-<a href="http://datahub.io/dataset/ipc-ar/resource/f73ecf0f-4126-404b-bb87-37ea5e3f1409" class="datos">Descargar datos</a>
-	<b>Análisis y producción de datos:</b> Alejandro Baranek
-	<br> 
-	<b>Desarrollo web:</b> Cristian Bertelegni
+<a href="http://datahub.io/dataset/ipc-ar/resource/f73ecf0f-4126-404b-bb87-37ea5e3f1409" class="datos" target="_blank">Descargar datos</a>
+	<p><b>Análisis y producción de datos:</b> Alejandro Baranek</p>
+	<p style="margin-top:5px"><b>Desarrollo web:</b> Cristian Bertelegni</p>
 </footer>
+
 
 <script type="text/javascript" src="bower_components/d3/d3.min.js"></script>
 <script type="text/javascript" src="bower_components/c3/c3.min.js"></script>
-<script type="text/javascript" src="js/scripts.js?1"></script>
+<script type="text/javascript" src="js/scripts.js?2"></script>
 
 <script type="text/javascript">
 	d3.csv(CSV_URL, function(err, data){
@@ -35,7 +35,6 @@
 	// g_data = add_timestamp_to_data(data);
 	g_data = data;
 	
-
 	drag_chart(CHART_3);
 });
 </script>

@@ -1,4 +1,5 @@
 // https://docs.google.com/document/d/1nW5JdLrGwxEvFUgXh5qc6II9Z1Dvg7OBqZ0mHz04Ph4/edit#
+
 const CSV_URL  = 'data/ipc_2005_2014_coeficiente_confusion.csv',
 	CHART_1 = ["IPC.San.Luis", "IPC.INDEC" ],
 	CHART_2 = ["IPC.San.Luis.acumulado.anual", "IPC.INDEC.acumulado.anual"],
@@ -9,10 +10,12 @@ const CSV_URL  = 'data/ipc_2005_2014_coeficiente_confusion.csv',
 	        "IPC.San.Luis.acumulado.anual": 'y2' // ADD
 	      };
 
+"use strict";
+
 var g_data;
 
 function drag_chart(arr_keys, axes_y2, chart_type){
-
+	
 	var data_chart = map_for_chart(g_data, arr_keys);
 	
 	// lineas a mediado de diciembre
@@ -35,12 +38,12 @@ function drag_chart(arr_keys, axes_y2, chart_type){
 		"coeficiente.confusion.acumulado.anual": "CC acumulada anual"
 	};
 
-	data_chart.types = {
-        // "coeficiente.confusion.acumulado.anual": 'bar'
-      };
+	// data_chart.types = {
+ //        // "coeficiente.confusion.acumulado.anual": 'bar'
+ //      };
 
-    data_chart.hide = function(x){console.log(x)};
-	
+    // data_chart.hide = function(x){console.log(x)};
+
 	if(chart_type){
 		data_chart.type = chart_type;
 	}
@@ -130,7 +133,6 @@ function drag_chart(arr_keys, axes_y2, chart_type){
 
 
 // helpers
-
 
 function map_for_chart (data, arr_keys) {
 	var columns = [
