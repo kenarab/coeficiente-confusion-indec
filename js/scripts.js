@@ -9,7 +9,6 @@ const CSV_URL  = 'data/ipc_2005_2014_coeficiente_confusion.csv',
 	        "IPC.San.Luis.acumulado.anual": 'y2' // ADD
 	      };
 
-
 var g_data;
 
 function drag_chart(arr_keys, axes_y2, chart_type){
@@ -23,7 +22,11 @@ function drag_chart(arr_keys, axes_y2, chart_type){
 		"IPC.INDEC.acumulado.anual": "Acum. Anual INDEC",
 		"coeficiente.confusion": "CC acumulada",
 		"coeficiente.confusion.acumulado.anual": "CC acumulada anual"
-	}
+	};
+
+	data_chart.types = {
+        "coeficiente.confusion.acumulado.anual": 'bar'
+      };
 
 	if(chart_type){
 		data_chart.type = chart_type;
@@ -33,7 +36,8 @@ function drag_chart(arr_keys, axes_y2, chart_type){
             x: {
                 type: 'timeseries',
                 tick: {
-                    format: '%Y-%m-%d'
+                    format: '%m-%Y',
+                	count: 9
                 }
             }
         };
@@ -54,8 +58,17 @@ function drag_chart(arr_keys, axes_y2, chart_type){
         data: data_chart,
         axis: axis,
         color: {
-        	pattern: ['blue', 'green', ]
+        	pattern: ['#2d537b', '#4f845d', ]
     	},
+    	tooltip: {
+			format: {
+				// title: function (x) { return 'Data ' + x; }
+				// name: function(value, ratio, id){return value;},
+				value: function (value, ratio, id) {
+					return value.toFixed(2);
+				}
+			}
+		},
     	point: {
     		show: true,
     		r: 0,
@@ -78,7 +91,8 @@ function drag_chart(arr_keys, axes_y2, chart_type){
             show: true
         },
         zoom: {
-            enabled: true
+            enabled: true,
+            rescale: true
         }
     });
 }

@@ -15,8 +15,10 @@
 </header>
 <div id="content" class="wrapper">
 	<ul>
-		<li><a href="#" onclick="drag_chart(CHART_4, AXES_Y2_CHART_4); return false;">Gráfico 1</a></li>
-		<li><a href="#" onclick="drag_chart(CHART_3, null, 'bar'); return false;">Gráfico 2</a></li>
+		<li><a class="active" href="#" onclick="drag_chart(CHART_4, AXES_Y2_CHART_4); change_active(this); return false;">Gráfico 1</a></li>
+		<li><a href="#" onclick="drag_chart(CHART_1); change_active(this); return false;">Gráfico 2</a></li>
+		<li><a href="#" onclick="drag_chart(CHART_2); change_active(this); return false;">Gráfico 3</a></li>
+		<li><a href="#" onclick="drag_chart(CHART_3); change_active(this); return false;">Gráfico 4</a></li>
 		<!-- <li><a href="#" onclick="drag_chart(CHART_3); return false;">Gráfico 3</a></li> -->
 	</ul>
 	<div id="chart"></div>
@@ -35,13 +37,19 @@
 
 <script type="text/javascript">
 	d3.csv(CSV_URL, function(err, data){
-	"use strict";
-	// g_data = add_timestamp_to_data(data);
-	g_data = data;
-	
+		"use strict";
+		// g_data = add_timestamp_to_data(data);
+		g_data = data;
+		
 
-	drag_chart(CHART_3, null, 'bar');
-});
+		drag_chart(CHART_4, AXES_Y2_CHART_4);
+	});
+
+	function change_active(el){
+		d3.selectAll('li a.active').attr('class', '');
+		d3.select(el).attr('class', 'active');
+		// $(el).addClass('active');
+	}
 </script>
 
 
