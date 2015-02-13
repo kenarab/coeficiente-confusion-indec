@@ -1,8 +1,8 @@
 # Coeficiente de Confusión- Indec
 
 El proyecto consta de
-* scripts en R para procesar los datos y gráficos.
-* aplicación web en JS para producir gráficos interactivos
+* Un programa en R que procesa el coeficiente de confusión y genera salidas.
+* aplicación web en JS para generar los gráficos interactivos
 
 # R: instrucciones para reproducir ejercicio 
 
@@ -10,22 +10,22 @@ El proyecto consta de
 cd R
 Rscript coeficiente_confusion.R
 ```
-El programa descarga los datos oficiales del sitio datahub.io y realiza el procesamiento del coeficiente de confusión
+El programa descarga los datos oficiales recopilados en el sitio datahub.io y a partir de esa información, empalma las series correspondientes, calcula los coeficientes, grafica y exporta los archivos.
 
-se crea un directorio indicado en la variable export.dir ( el valor por defecto es ~/coeficiente-confusion) donde se guardan los archivos:
-ipc-indec-sanluis-variaciones.png
-ipc-indec-sanluis-coeficiente.confusion.png
-ipc-2005-2014-coeficiente-confusion.csv
+La exportación se realiza en un directorio definido en la variable export.dir ( el valor por defecto es ~/coeficiente-confusion):
+* ipc-indec-sanluis-variaciones.png
+* ipc-indec-sanluis-coeficiente.confusion.png
+* ipc-2005-2014-coeficiente-confusion.csv
 
-y se reemplaza el archivo de datos de la aplicación web
-data/ipc_2005_2014_coeficiente_confusion.csv
+Se reemplaza el archivo de datos de la aplicación web data/ipc_2005_2014_coeficiente_confusion.csv
 
 ## Dependencias 
-Para descargar los datos, el programa usa el paquete RCurl, implementación en R de Curl. Si bien la instalación del paquete es automática, la instalación de la librería Curl tiene que realizarla el usuario. 
+Para correr el proceso, debe tener el lenguaje de estadística computacional [R](http://www.r-project.org/) instalado en su computadora.
+Además, para descargar los datos, el programa usa el paquete RCurl, implementación en R de Curl. Si bien la instalación del paquete en R es automática, la instalación de la librería Curl tiene que realizarla el usuario. 
 
-En Ubuntu, el comando para instalar la librería Curl es:
+En Ubuntu, el comando para instalar R y la librería Curl es:
 ```
-sudo apt-get install libcurl4-openssl-dev 
+sudo apt-get install r-base libcurl4-openssl-dev 
 ```
 
 ## Aplicación Web.
