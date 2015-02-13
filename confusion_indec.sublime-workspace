@@ -4,16 +4,36 @@
 		"selected_items":
 		[
 			[
-				"ma",
-				"margin"
-			],
-			[
-				"bor",
-				"border-radius"
+				"fon",
+				"font-weight"
 			],
 			[
 				"mar",
-				"margin-left"
+				"margin-top"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"bo",
+				"border-bottom-style"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"bor",
+				"border-top-width"
+			],
+			[
+				"data",
+				"data_chart"
+			],
+			[
+				"ma",
+				"max-width"
 			],
 			[
 				"in",
@@ -22,10 +42,6 @@
 			[
 				"p",
 				"push"
-			],
-			[
-				"fon",
-				"font-size"
 			],
 			[
 				"for",
@@ -63,39 +79,41 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 1078,
+				"buffer_size": 1960,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "confusion_indec.sublime-project",
+			"settings":
+			{
+				"buffer_size": 73,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "grafico1.html",
+			"settings":
+			{
+				"buffer_size": 1337,
+				"line_ending": "Unix",
+				"name": "grafico1.html"
+			}
+		},
+		{
+			"file": "grafico2.html",
+			"settings":
+			{
+				"buffer_size": 1347,
+				"line_ending": "Unix",
+				"name": "grafico2.html"
 			}
 		},
 		{
 			"file": "js/scripts.js",
 			"settings":
 			{
-				"buffer_size": 1804,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": ".gitignore",
-			"settings":
-			{
-				"buffer_size": 16,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "README.md",
-			"settings":
-			{
-				"buffer_size": 422,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "bower.json",
-			"settings":
-			{
-				"buffer_size": 295,
+				"buffer_size": 4084,
 				"line_ending": "Unix"
 			}
 		},
@@ -103,7 +121,7 @@
 			"file": "css/styles.css",
 			"settings":
 			{
-				"buffer_size": 263,
+				"buffer_size": 1396,
 				"line_ending": "Unix"
 			}
 		}
@@ -135,12 +153,13 @@
 	},
 	"expanded_folders":
 	[
-		"/home/cbertelegni/projects/confusion_indec",
-		"/home/cbertelegni/projects/confusion_indec/bower_components/c3",
-		"/home/cbertelegni/projects/confusion_indec/bower_components/d3"
+		"/home/cbertelegni/projects/confusion_indec"
 	],
 	"file_history":
 	[
+		"/home/cbertelegni/projects/confusion_indec/LICENSE.md",
+		"/home/cbertelegni/projects/confusion_indec/README.md",
+		"/home/cbertelegni/projects/confusion_indec/.gitignore",
 		"/home/cbertelegni/projects/confusion_indec/bower.json",
 		"/home/cbertelegni/projects/confusion_indec/css/reset.css",
 		"/home/cbertelegni/projects/confucion_indec_project/.bowerrc",
@@ -164,7 +183,7 @@
 	],
 	"find":
 	{
-		"height": 31.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
@@ -179,6 +198,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"color",
 			"amount_rows_on_home",
 			"self.SUBQUERY_LABEL",
 			"self.SUBQUERY_MAGNITUDE",
@@ -244,7 +264,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -253,15 +273,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1078,
+						"buffer_size": 1960,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								575,
-								575
+								1052,
+								1052
 							]
 						],
 						"settings":
@@ -269,88 +289,32 @@
 							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 276.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "js/scripts.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1804,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								88,
-								88
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": ".gitignore",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 16,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								16,
-								16
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 552.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "README.md",
-					"semi_transient": false,
+					"buffer": 1,
+					"file": "confusion_indec.sublime-project",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 422,
+						"buffer_size": 73,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								317,
-								317
+								73,
+								73
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -360,33 +324,89 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "bower.json",
-					"semi_transient": true,
+					"buffer": 2,
+					"file": "grafico1.html",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 295,
+						"buffer_size": 1337,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								903,
+								903
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"auto_name": "grafico1.html",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 414.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "grafico2.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1347,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								454,
+								454
+							]
+						],
+						"settings":
+						{
+							"auto_name": "grafico2.html",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "js/scripts.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4084,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1782,
+								1782
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": -0.0,
+						"translation.y": 897.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -395,15 +415,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 263,
+						"buffer_size": 1396,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								124,
-								124
+								1257,
+								1257
 							]
 						],
 						"settings":
@@ -411,10 +431,10 @@
 							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 345.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
