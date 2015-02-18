@@ -1,0 +1,30 @@
+{
+  "name": "confusion_indec",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://cbertelegni@github.com/cbertelegni/confusion_indec.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/cbertelegni/confusion_indec/issues"
+  },
+  "devDependencies": {
+    "gulp": "~3.8.11",
+    "gulp-build": "~0.5.3",
+    "gulp-uglify": "~1.1.0",
+    "gulp-jshint": "~1.9.2",
+    "gulp-concat": "~2.4.3",
+    "gulp-html-replace": "~1.4.4",
+    "gulp-minify-css": "~0.4.5",
+    "gulp-sourcemaps": "~1.3.0",
+    "gulp-clean": "~0.3.1",
+    "jshint-stylish": "~1.0.0"
+  }
+}

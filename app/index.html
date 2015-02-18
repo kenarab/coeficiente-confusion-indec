@@ -4,9 +4,13 @@
 	<meta charset="UTF-8">
 	<meta name=viewport content="width=device-width, initial-scale=1">
 	<title>Confusión Indec</title>
+	<!-- build:css -->
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	
 	<link rel="stylesheet" type="text/css" href="bower_components/c3/c3.min.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css?1">
+	
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<!-- endbuild -->
 </head>
 <body>
 
@@ -14,7 +18,7 @@
 	<h1>Confusión Indec</h1>
 </header>
 <div id="content" class="wrapper">
-	<ul>
+	<ul class="btn_rigth">
 		<li><a class="active" href="#" onclick="drag_chart(CHART_4, AXES_Y2_CHART_4); change_active(this); return false;">Gráfico 1</a></li>
 		<li><a href="#" onclick="drag_chart(CHART_1); change_active(this); return false;">Gráfico 2</a></li>
 		<li><a href="#" onclick="drag_chart(CHART_2); change_active(this); return false;">Gráfico 3</a></li>
@@ -26,24 +30,39 @@
 
 <footer class="wrapper">
 <a href="http://datahub.io/dataset/ipc-ar/resource/f73ecf0f-4126-404b-bb87-37ea5e3f1409" class="datos" target="_blank">Descargar datos</a>
-	<p><b>Análisis y producción de datos:</b> Alejandro Baranek</p>
-	<p style="margin-top:5px"><b>Desarrollo web:</b> Cristian Bertelegni</p>
+<a href="#" class="ctos" onclick="d3.select('#creditos').style('display','block'); return false;">Créditos</a>
 </footer>
 
+<div class="alert-popup" id="creditos">
+	<div class="content-popup">
+		<a class="close" onclick="d3.selectAll('.alert-popup').style('display','none'); return false;">x</a>
+		<div class="body-popup">
+			<h2>Créditos</h2>
+			<ul>
+			<li><b>Análisis y producción de datos:</b> Alejandro Baranek</li>
+			<li><b>Desarrollo web:</b> Cristian Bertelegni</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- build:js -->
 <script type="text/javascript" src="bower_components/d3/d3.min.js"></script>
 <script type="text/javascript" src="bower_components/c3/c3.min.js"></script>
-<script type="text/javascript" src="js/scripts.js?1"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<!-- endbuild -->
 
 <script type="text/javascript">
-	d3.csv(CSV_URL, function(err, data){
-		"use strict";
-		// g_data = add_timestamp_to_data(data);
-		g_data = data;
-		
+	window.onload=function(){
+		d3.csv(CSV_URL, function(err, data){
+			"use strict";
+			// g_data = add_timestamp_to_data(data);
+			g_data = data;
+			
+			drag_chart(CHART_4, AXES_Y2_CHART_4);
+		});
 
-		drag_chart(CHART_4, AXES_Y2_CHART_4);
-	});
-
+	};
+	
 	function change_active(el){
 		d3.selectAll('li a.active').attr('class', '');
 		d3.select(el).attr('class', 'active');
