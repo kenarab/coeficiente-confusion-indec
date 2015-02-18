@@ -1,4 +1,4 @@
-"use strict";
+
 var CSV_URL  = 'data/ipc_2005_2014_coeficiente_confusion.csv',
 	CHART_1 = ["IPC.San.Luis", "IPC.INDEC" ],
 	CHART_2 = ["IPC.San.Luis.acumulado.anual", "IPC.INDEC.acumulado.anual"],
@@ -13,7 +13,8 @@ var CSV_URL  = 'data/ipc_2005_2014_coeficiente_confusion.csv',
 var g_data;
 
 function drag_chart(arr_keys, axes_y2, chart_type){
-	
+	"use strict";
+
 	var data_chart = map_for_chart(g_data, arr_keys);
 	
 	// lineas a mediado de diciembre
@@ -60,7 +61,7 @@ function drag_chart(arr_keys, axes_y2, chart_type){
             },
             y:{
             	label: {
-            		text:"Indice (%)",
+            		text:"Indice",
             		position: 'outer-middle'
             	}
             }
@@ -70,7 +71,7 @@ function drag_chart(arr_keys, axes_y2, chart_type){
 	}
 
 	if(/acumulado/gi.test(arr_keys[0])){ // si es coeficiente cambia el nombre del eje y
-		axis.y.label.text = "Variación anual acumulada";
+		axis.y.label.text = "Variación anual acumulada (%)";
 	}
 
 	if (axes_y2){
@@ -80,7 +81,7 @@ function drag_chart(arr_keys, axes_y2, chart_type){
 		axis.y2 = {
 			show: true,
 				label: {
-					text: "Variación anual acumulada",
+					text: "Variación anual acumulada (%)",
 					position: 'outer-middle'
 				}
 			};
@@ -133,6 +134,8 @@ function drag_chart(arr_keys, axes_y2, chart_type){
 // helpers
 
 function map_for_chart (data, arr_keys) {
+	"use strict";
+
 	var columns = [
 		['x']
 	];
@@ -159,7 +162,7 @@ function map_for_chart (data, arr_keys) {
 }
 
 function add_timestamp_to_data(data){
-
+	"use strict";
     data = data.map(function(d){ 
         var date = d.periodo.split("-");
         d.timestamp = new Date(date[0], date[1]).getTime();
