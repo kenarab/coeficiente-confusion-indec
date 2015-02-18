@@ -39,6 +39,7 @@ bower install
 ### Correr un server local
 
 ```bash
+cd app
 python -m SimpleHTTPServer
 ```
 
