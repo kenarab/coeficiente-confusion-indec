@@ -4,9 +4,13 @@
 	<meta charset="UTF-8">
 	<meta name=viewport content="width=device-width, initial-scale=1">
 	<title>Confusión Indec</title>
+	<!-- build:css -->
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	
 	<link rel="stylesheet" type="text/css" href="../bower_components/c3/c3.min.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css?4">
+	
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<!-- endbuild -->
 </head>
 <body>
 
@@ -36,11 +40,11 @@
 	</div>
 </div>
 
-
+<!-- build:js -->
 <script type="text/javascript" src="../bower_components/d3/d3.min.js"></script>
 <script type="text/javascript" src="../bower_components/c3/c3.min.js"></script>
-<script type="text/javascript" src="js/scripts.js?3"></script>
-
+<script type="text/javascript" src="js/scripts.js"></script>
+<!-- endbuild -->
 <script type="text/javascript">
 	d3.csv(CSV_URL, function(err, data){
 	"use strict";

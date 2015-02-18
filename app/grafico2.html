@@ -4,15 +4,19 @@
 	<meta charset="UTF-8">
 	<meta name=viewport content="width=device-width, initial-scale=1">
 	<title>Confusión Indec</title>
+	<!-- build:css -->
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	
 	<link rel="stylesheet" type="text/css" href="../bower_components/c3/c3.min.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css?4">
+	
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<!-- endbuild -->
 </head>
 <body>
 
 <header class="wrapper">
-	<h1>Evolución IPC y acumulados anuales. San Luis vs INDEC.</h1>
-	<p>Base Dic-2006=100. Oct/2005 - Dic/2014</p>
+	<h1>Evolución de coeficiente de confusión <small>(CC)</small></h1>
+	<p>San Luis/INDEC, acumulados anuales y total. Oct-2005 / Dic-2014</p>
 </header>
 <div id="content" class="wrapper">
 	<div id="chart"></div>
@@ -37,19 +41,23 @@
 </div>
 
 
+<!-- build:js -->
 <script type="text/javascript" src="../bower_components/d3/d3.min.js"></script>
 <script type="text/javascript" src="../bower_components/c3/c3.min.js"></script>
-<script type="text/javascript" src="js/scripts.js?3"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<!-- endbuild -->
 
 <script type="text/javascript">
-	d3.csv(CSV_URL, function(err, data){
-	"use strict";
-	// g_data = add_timestamp_to_data(data);
-	g_data = data;
-	
+window.onload=function(){
 
-	drag_chart(CHART_4, AXES_Y2_CHART_4);
-});
+	d3.csv(CSV_URL, function(err, data){
+		"use strict";
+		// g_data = add_timestamp_to_data(data);
+		g_data = data;
+		
+		drag_chart(CHART_3);
+	});
+};
 </script>
 </body>
 </html>
